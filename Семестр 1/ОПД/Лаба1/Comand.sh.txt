@@ -1,0 +1,81 @@
+#!/bin/bash
+
+mkdir lab0
+cd lab0
+mkdir -p charmander1/octillery charmander1/empoleon charmander1/krabby 
+jigglypuff0/ampharos jigglypuff0/rattata jigglypuff0/ursaring jigglypuff0/gyarados
+jigglypuff0/cofagrigus jigglypuff0/Stoutland tynamo2/haunter tynamo2/cleffa tynamo2/skitty tynamo2/sudowoodo tynamo2/golduck
+echo -e "Тип покемона ROCK FLYING"> archeops4 
+echo -e "Способности Tackle Morning Sun Growth Leech Seed Helping Hand Magical Leaf Sunny Day Worry Seed Take Down Solarbeam
+Lucky Chant"> cherubi3
+echo -e "Способности Quick Attack Focus Energy Bite Pursuit Hyper Fang Sucker Punch Scary Face Crunch Assurance Super Fang
+Double-Edge Endeavor"> raticatel
+cat > beheeym << EOF
+Способности Growl Heal
+Block Miracle Eye Psybeam Headbutt Hidden Powr Imprison Simple Beam
+Zen Headbutt Psych Up Psychic Calm Mind Recovaer Guard Split Power Split Synchronoise Wonder Room
+EOF
+cat > poliwhirl << EOF
+Тип покемона WATER
+NONE
+EOF
+chmod 640 archeops4
+chmod 555 charmander1
+chmod 733 empoleon
+chmod 400 beheeyem
+chmod 064 poliwhirl
+chmod 611 cherubi3
+chmod 311 jigglypuff0
+chmod 524 ampharos
+chmod 357 rattata
+chmod 666 ursaring
+chmod 570 gyarados
+chmod 767 cofagrigus
+chmod 733 stoutland
+chmod 404 raticate1
+chmod 571 tynamo2
+chmod 513 haunter
+chmod 573 cleffa
+chmod 676 skitty
+chmod 357 sudowoodo
+chmod 555 golduck
+cp archeops4 charmander1/beheeyemarcheops
+ln archeops4 charmander1/poliwhirlarcheops
+ln -s archeops4 charmander1/poliwhirlarcheops
+ln -s jigglypuff0/ Copy_90
+cat charmander1/poliwhirl charmander1/beheeyem > raticate1_66
+cp -r tynamo2 jigglypuff0/Stoutland
+cp archeops4 tynamo2/skitty
+mkdir tmp
+cd tmp
+echo > tmpSave
+wc -l **/*1 > lab0/tmp/tmpSave
+ls -ltR **/g*
+cat beheeyem poliwhirl 2>&1 | grep -vi "m$"
+ls -ltR 2>/dev/null | grep "do" | head -n 2
+chmod u+rwx jigglypuff0
+ls jigglypuff0 | sort
+chmod 311  jigglypuff0
+ls -ltR jigglypuff0
+rm raticate1
+override r-----r-- s413012/studs uarch for raticate1? yes
+cd
+rm lab0/charmander1/beheeyem
+cd lab0
+chmod u+rwx jigglypuff0
+cd jigglypuff0
+rm Copy_90
+chmod 311 jigglypuff0
+cd ..
+chmod 311 jigglypuff0
+rm charmander1/poliwhirlarcheo*
+chmod -R u+rwx tynamo2
+rm -r tynamo2
+chmod u+wrx jigglypuff0
+cd jigglypuff0
+chmod -R u+rwx stoutland
+rm -r stoutland
+
+
+
+

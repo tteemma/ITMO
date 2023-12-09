@@ -3,7 +3,7 @@ package Entity;
 import Enums.Gender;
 import Enums.States;
 import Exeptions.IncorrectStateOfChildren;
-import Object.Flour;
+import Interface.IItems;
 
 import java.util.Objects;
 
@@ -13,9 +13,10 @@ public class Children extends Person{
     }
 
     private States state = States.HARMFULLY;
+    Flour flour = new Flour();
 
 
-    public String harmfulToEat(States state, Flour flour){
+    public String harmfulToEat(States state){
         if (this.state != state){
             this.state = state;
             throw new IncorrectStateOfChildren();
@@ -23,6 +24,12 @@ public class Children extends Person{
         }
         else {
             return "Должно быть, есть " + flour.named() + " " + States.HARMFULLY + " только " + getName();
+        }
+    }
+    public static class Flour implements IItems {
+        @Override
+        public String named() {
+            return "мучное";
         }
     }
 

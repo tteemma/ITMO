@@ -5,9 +5,8 @@ import Enums.Prepositions;
 import Enums.Sounds;
 import Interface.IDeclenable;
 import Interface.IDelighted;
+import Interface.IItems;
 import Interface.IJamming;
-import Object.Coffee;
-import Object.Buns;
 
 import java.util.Objects;
 
@@ -29,7 +28,7 @@ public class MissBok extends Person implements IDelighted, IDeclenable, IJamming
     public String toString() {
         return "Она ";
     }
-    public String cooked(Coffee coffee){
+    public String cooked(IItems coffee){
         return  "как раз варила " + this.declensions() + coffee.named();
     }
 
@@ -53,7 +52,7 @@ public class MissBok extends Person implements IDelighted, IDeclenable, IJamming
         }
     }
     @Override
-    public String eat(Coffee coffee, Buns buns){
+    public String eat(IItems coffee, IItems buns){
         return "заедая" + coffee.named() + " свежими " + buns.named();
     }
     @Override

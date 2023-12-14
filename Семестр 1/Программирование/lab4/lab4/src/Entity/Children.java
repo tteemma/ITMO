@@ -8,10 +8,10 @@ import Interface.IItems;
 import java.util.Objects;
 
 public class Children extends Person{
+
     public Children(String name, Gender gender){
         super(name, gender);
     }
-
     private States state = States.HARMFULLY;
     Flour flour = new Flour();
 
@@ -19,7 +19,7 @@ public class Children extends Person{
     public String harmfulToEat(States state){
         if (this.state != state){
             this.state = state;
-            throw new IncorrectStateOfChildren();
+            throw new IncorrectStateOfChildren(state, this);
             //return "Должно быть, есть " + flour.named() + " " + state + " только " + getName();
         }
         else {

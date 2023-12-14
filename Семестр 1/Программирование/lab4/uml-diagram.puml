@@ -1,0 +1,144 @@
+@startuml
+class Entity.Tamer {
++ String help()
++ String afraid(Kid)
+}
+interface Interface.IAfraid {
+~ String afraid(Kid)
+}
+interface Interface.IItems {
+~ String named()
+}
+class Main {
++ {static} void main(String[])
+}
+class Entity.Housemaids {
++ boolean equals(Object)
++ int hashCode()
++ String toString()
+}
+class Story.Teller {
+~ Kid kid
+~ Tamer tamer
+~ Person hosusemaids
+~ MissBok missBok
+~ Children children
+~ IItems coffee
+~ IItems buns
++ void tell()
+}
+enum Enums.Gender {
++  MALE
++  FEMALE
++  OTHER
+- String pronoun
++ String getPronoun()
++ String toString()
+}
+interface Interface.IUnderstood {
+~ String understood()
+}
+abstract class Entity.Person {
+- String name
+- Gender gender
++ String getName()
++ boolean isMale()
++ boolean equals(Object)
++ int hashCode()
++ String toString()
+}
+enum Enums.Sounds {
++  SILENCE
++  NOISE
++  EMPTINESS
+- String sound
++ String toString()
+}
+interface Interface.IJamming {
+~ String eat(IItems,IItems)
+}
+enum Enums.Prepositions {
++  BUT
++  ON
++  WHEN
++  HIM
++  IN
++  AND
++  WHAT
+- String preposition
++ String toString()
+}
+enum Enums.States {
++  HARMFULLY
++  GFYH
++  NEUTRAL
+- String state
++ String toString()
+}
+class Entity.Children {
+- States state
+~ Flour flour
++ String harmfulToEat(States)
++ String toString()
++ boolean equals(Object)
++ int hashCode()
+}
+class Entity.Children$Flour {
++ String named()
+}
+interface Interface.IDeclenable {
+~ String declensions()
+}
+interface Interface.IDelighted {
+~ String delighted(Kid)
+}
+class Entity.Kid {
+- String name
+- Gender gender
+- boolean isUnderstood
+- Kitchen kitchen
++ String moved()
++ String toString()
++ String understood()
++ String declensions()
+}
+class Entity.Kid$Kitchen {
++ String named()
+}
+class Entity.MissBok {
+- boolean isGointTo
+- Sounds sounds
++ String delighted(Kid)
++ String toString()
++ String cooked(IItems)
++ String goingTo(boolean)
++ String setSound(Sounds)
++ String eat(IItems,IItems)
++ String declensions()
++ boolean equals(Object)
++ int hashCode()
+}
+class Exeptions.IncorrectStateOfChildren {
+}
+class Exeptions.IncorrectHistoryNumber {
+}
+
+
+Interface.IAfraid <|.. Entity.Tamer
+Entity.Person <|-- Entity.Tamer
+Entity.Person <|-- Entity.Housemaids
+Entity.Person <|-- Entity.Children
+Entity.Children +.. Entity.Children$Flour
+Entity.IItems <|.. Entity.Children$Flour
+Interface.IDeclenable <|.. Entity.Kid
+Interface.IUnderstood <|.. Entity.Kid
+Entity.Person <|-- Entity.Kid
+Entity.Kid +.. Entity.Kid$Kitchen
+Entity.IItems <|.. Entity.Kid$Kitchen
+Interface.IDelighted <|.. Entity.MissBok
+Interface.IDeclenable <|.. Entity.MissBok
+Interface.IJamming <|.. Entity.MissBok
+Entity.Person <|-- Entity.MissBok
+Exeptions.RuntimeException <|-- Exeptions.IncorrectStateOfChildren
+Exeptions.Exception <|-- Exeptions.IncorrectHistoryNumber
+@enduml

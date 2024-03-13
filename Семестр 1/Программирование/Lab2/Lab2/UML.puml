@@ -1,0 +1,73 @@
+@startuml
+class Attack.Physical.ShadowPunch {
+# String describe()
+}
+class Pokemons.Magneton {
+}
+class Pokemons.Volbeat {
+}
+class Pokemons.Armaldo {
+}
+class Pokemons.Minim {
+}
+class Pokemons.Claydol {
+}
+class Attack.Physical.Guillotine {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class Attack.Physical.Tackle {
+# String describe()
+}
+class Attack.Physical.FlameWheel {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class Attack.Special.ThunderShock {
+# void applyOppDamage(Pokemon,double)
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class Attack.Status.ThunderWave {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class Attack.Physical.JumpKick {
+# String describe()
+}
+class Attack.Status.Assist {
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+class Attack.Physical.MetalClaw {
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+class Main {
++ {static} void main(String[])
+}
+class Attack.Status.sleepTalk {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class Pokemons.Magnemite {
+}
+
+
+ru.ifmo.se.pokemon.PhysicalMove <|-- Attack.Physical.ShadowPunch
+ru.ifmo.se.pokemon.Pokemon <|-- Pokemons.Magneton
+ru.ifmo.se.pokemon.Pokemon <|-- Pokemons.Volbeat
+ru.ifmo.se.pokemon.Pokemon <|-- Pokemons.Armaldo
+ru.ifmo.se.pokemon.Pokemon <|-- Pokemons.Minim
+ru.ifmo.se.pokemon.Pokemon <|-- Pokemons.Claydol
+ru.ifmo.se.pokemon.PhysicalMove <|-- Attack.Physical.Guillotine
+ru.ifmo.se.pokemon.PhysicalMove <|-- Attack.Physical.Tackle
+ru.ifmo.se.pokemon.PhysicalMove <|-- Attack.Physical.FlameWheel
+ru.ifmo.se.pokemon.SpecialMove <|-- Attack.Special.ThunderShock
+ru.ifmo.se.pokemon.StatusMove <|-- Attack.Status.ThunderWave
+ru.ifmo.se.pokemon.PhysicalMove <|-- Attack.Physical.JumpKick
+ru.ifmo.se.pokemon.StatusMove <|-- Attack.Status.Assist
+ru.ifmo.se.pokemon.StatusMove <|-- Attack.Physical.MetalClaw
+Attack.Status.StatusMove <|-- Attack.Status.sleepTalk
+ru.ifmo.se.pokemon.Pokemon <|-- Pokemons.Magnemite
+@enduml

@@ -1,0 +1,138 @@
+1. wc выведит количество символов новой строки, слова и байтов для каждого файл.
+
+2. head выведиt первую часть файлов
+
+3. tail вывод последней части файлов
+
+4. sort сортировать строки текстовых файлов
+
+5. grep выводите линии, соответствующие шаблону
+
+
+p4:
+
+1)
+
+mkdir tmp
+cd tmp
+echo > tmpSave
+wc -l **/*1 > lab0/tmp/tmpSave
+
+
+2)
+
+ls -ltR **/g*
+
+3)
+
+[s413012@helios ~/lab0/charmander1]$ cat beheeyem poliwhirl 2>&1 | grep -vi "m$"
+Способности Growl Heal
+cat: poliwhirl: Permission denied
+[s413012@helios ~/lab0/charmander1]$
+
+4)
+
+[s413012@helios ~/lab0]$ ls -ltR 2>/dev/null | grep "do" | head -n 2
+d-wxr-xrwx  2 s413012  studs  2  8 сент. 19:45 sudowoodo
+./tynamo2/sudowoodo:
+
+5)
+
+[s413012@helios ~/lab0]$ chmod u+rwx jigglypuff0
+[s413012@helios ~/lab0]$ ls jigglypuff0 | sort
+ampharos
+cofagrigus
+Copy_90
+gyarados
+rattata
+stoutland
+ursaring
+[s413012@helios ~/lab0]$ chmod 311 jigglypuff0
+[s413012@helios ~/lab0]$
+
+6)
+
+[s413012@helios ~/lab0]$ ls -ltR jigglypuff0
+total 4
+drwx-wx-wx  3 s413012  studs  3  8 сент. 21:56 stoutland
+lrwxr-xr-x  1 s413012  studs  7  8 сент. 21:48 Copy_90 -> Copy_90
+drwx-wxrwx  2 s413012  studs  2  8 сент. 19:40 cofagrigus
+dr-xrwx---  2 s413012  studs  2  8 сент. 19:40 gyarados
+d-wx-wxr-x  2 s413012  studs  2  8 сент. 19:40 ursaring
+d-wxr-xrwx  2 s413012  studs  2  8 сент. 19:39 rattata
+dr-x-w-r--  2 s413012  studs  2  8 сент. 19:39 ampharos
+
+jigglypuff0/stoutland:
+total 9
+dr-xr-x--x  7 s413012  studs  7  8 сент. 21:56 tynamo2
+
+jigglypuff0/stoutland/tynamo2:
+total 3
+dr-x--x--x  2 s413012  studs  2  8 сент. 21:56 haunter
+drwxr-xr-x  2 s413012  studs  2  8 сент. 21:56 sudowoodo
+dr-xr-x---  2 s413012  studs  2  8 сент. 21:56 cleffa
+dr-xr-xr-x  2 s413012  studs  2  8 сент. 21:56 golduck
+dr-xr-xr--  2 s413012  studs  2  8 сент. 21:56 skitty
+
+jigglypuff0/stoutland/tynamo2/haunter:
+total 0
+
+jigglypuff0/stoutland/tynamo2/sudowoodo:
+total 0
+
+jigglypuff0/stoutland/tynamo2/cleffa:
+total 0
+
+jigglypuff0/stoutland/tynamo2/golduck:
+total 0
+
+jigglypuff0/stoutland/tynamo2/skitty:
+total 0
+
+jigglypuff0/cofagrigus:
+total 0
+
+jigglypuff0/gyarados:
+total 0
+
+jigglypuff0/ursaring:
+total 0
+ls: jigglypuff0/ursaring: Permission denied
+
+jigglypuff0/rattata:
+total 0
+ls: jigglypuff0/rattata: Permission denied
+
+jigglypuff0/ampharos:
+total 0
+
+
+P5
+
+1)
+[s413012@helios ~/lab0]$ rm raticate1
+override r-----r-- s413012/studs uarch for raticate1? yes
+[s413012@helios ~/lab0]$
+2)
+[s413012@helios ~/lab0]$ cd charmander1
+[s413012@helios ~/lab0/charmander1]$ rm beheeyem
+override r-------- s413012/studs uarch for beheeyem? yes
+3)
+[s413012@helios ~/lab0]$ chmod u+rwx jigglypuff0
+[s413012@helios ~/lab0]$ cd jigglypuff0
+[s413012@helios ~/lab0/jigglypuff0]$ ls
+ampharos        cofagrigus      Copy_90         gyarados        rattata         stoutland       ursaring
+[s413012@helios ~/lab0/jigglypuff0]$ rm Copy_90
+[s413012@helios ~/lab0/jigglypuff0]$ chmod 311 jigglypuff0
+[s413012@helios ~/lab0/jigglypuff0]$ cd ..
+[s413012@helios ~/lab0]$ chmod 311 jigglypuff0
+4)
+[s413012@helios ~/lab0]$ rm charmander1/poliwhirlarcheo*
+5)
+[s413012@helios ~/lab0]$ chmod -R u+rwx tynamo2
+[s413012@helios ~/lab0]$ rm -r tynamo2
+
+6)
+[s413012@helios ~/lab0/jigglypuff0]$ chmod -R u+rwx stoutland
+[s413012@helios ~/lab0/jigglypuff0]$ rm -r stoutland
+

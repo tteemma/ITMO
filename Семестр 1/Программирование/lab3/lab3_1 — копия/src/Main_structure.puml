@@ -1,0 +1,448 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Main",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_2080559107 { 
+   	label=Entity
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Entity1847768472[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Entity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Everyone1847768472[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Everyone&lt;T  extends Troll&gt;</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Stretched(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ watched(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MumiMama1847768472[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MumiMama</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ bring(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ buried(bottle: Bottle): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ decorated(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ placed(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ puted(stones: Stones): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ putedTo(stones: Stones): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ reheat(pancakes: Pancakes): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ spread(sand: Sand): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Mumi_Troll1847768472[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Mumi_Troll</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ jump(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ maneuver(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ take(boat: Boat, coast: Coast): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Stone1847768472[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Stone</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Troll1847768472[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Troll</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   gender: Gender [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_2390489 { 
+   	label=Main
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Main2390489[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Main</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_5004532 { 
+   	label=Objects
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Board1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Board</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ declensions(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Boat1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Boat</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ declensions(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Bottle1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Bottle</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+   butter: Butter [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ declensions(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Bow1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Bow</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ poked(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Butter1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Butter</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ declensions(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Coast1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Coast</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ declensions(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ revived(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Pancakes1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Pancakes</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Sand1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Sand</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ declensions(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ mumiMam(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Shoal1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Shoal</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ declensions(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Stones1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Stones</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   stones: List&lt;Stone&gt; [0..*]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ declensions(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Tablecloth1514066129[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Tablecloth</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ notCarry(): String</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_80218325 { 
+   	label=Story
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Story600691248[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Story</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   board: Board [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   boat: Boat [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bottle: Bottle [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   bow: Bow [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   coast: Coast [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   everyone: Everyone&lt;Troll&gt; [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   mumiMama: MumiMama [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   mumiTroll: Mumi_Troll [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   pancakes: Pancakes [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   sand: Sand [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   shoal: Shoal [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   st: List&lt;Stone&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   stones: Stones [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   tablecloth: Tablecloth [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ tellStory()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Bottle1514066129 -> Butter1514066129[label="butter
+[0..1]"];
+Entity1847768472 -> Board1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Boat1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Bottle1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Bow1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Butter1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Coast1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Pancakes1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Sand1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Shoal1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Stone1847768472[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Stones1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Tablecloth1514066129[arrowhead=none, arrowtail=empty, dir=both];
+Entity1847768472 -> Troll1847768472[arrowhead=none, arrowtail=empty, dir=both];
+Main2390489 -> Story600691248[label="main() -> tellStory()"];
+MumiMama1847768472 -> Bottle1514066129[label="buried() -> declensions()"];
+MumiMama1847768472 -> Butter1514066129[label="buried() -> declensions()"];
+MumiMama1847768472 -> Sand1514066129[label="spread() -> mumiMam()"];
+MumiMama1847768472 -> Stones1514066129[label="puted() -> declensions()"];
+Mumi_Troll1847768472 -> Boat1514066129[label="take() -> declensions()"];
+Mumi_Troll1847768472 -> Coast1514066129[label="take() -> declensions()"];
+Shoal1514066129 -> Board1514066129[arrowhead=none];
+Shoal1514066129 -> Boat1514066129[arrowhead=none];
+Shoal1514066129 -> Bottle1514066129[arrowhead=none];
+Shoal1514066129 -> Butter1514066129[arrowhead=none];
+Shoal1514066129 -> Coast1514066129[arrowhead=none];
+Shoal1514066129 -> Sand1514066129[arrowhead=none];
+Shoal1514066129 -> Stones1514066129[arrowhead=none];
+Stones1514066129 -> Stone1847768472[label="stones
+[0..*]"];
+Story600691248 -> Board1514066129[label="board
+[0..1]"];
+Story600691248 -> Boat1514066129[label="boat
+[0..1]"];
+Story600691248 -> Bottle1514066129[label="bottle
+[0..1]"];
+Story600691248 -> Bow1514066129[label="bow
+[0..1]"];
+Story600691248 -> Coast1514066129[label="coast
+[0..1]"];
+Story600691248 -> Everyone1847768472[label="everyone
+[0..1]"];
+Story600691248 -> MumiMama1847768472[label="mumiMama
+[0..1]"];
+Story600691248 -> Mumi_Troll1847768472[label="mumiTroll
+[0..1]"];
+Story600691248 -> Pancakes1514066129[label="pancakes
+[0..1]"];
+Story600691248 -> Sand1514066129[label="sand
+[0..1]"];
+Story600691248 -> Shoal1514066129[label="shoal
+[0..1]"];
+Story600691248 -> Stone1847768472[label="st
+[0..*]"];
+Story600691248 -> Stones1514066129[label="stones
+[0..1]"];
+Story600691248 -> Tablecloth1514066129[label="tablecloth
+[0..1]"];
+Story600691248 -> Troll1847768472[label="everyone
+[0..1]"];
+Troll1847768472 -> MumiMama1847768472[arrowhead=none, arrowtail=empty, dir=both];
+Troll1847768472 -> Mumi_Troll1847768472[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml

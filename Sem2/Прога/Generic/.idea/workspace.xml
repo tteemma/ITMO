@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6bbef858-7eda-478d-9c45-c70b84282e1c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dqw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labwork5/report_lab5 — копия.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labwork5/scrtipt1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labwork5/scrtipt2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labwork5/scrtipt3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../labwork5/t.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/Lab1/console.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/Lab1/createTable.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/Lab1/droptable.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/Lab1/report.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/Lab1/report1.0.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BD/Lab1/theory.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5_project/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5_project/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/commands" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/report_lab5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/BlankConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/Console.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/ConsoleColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/ConsoleInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/Executable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/Printable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/UserInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/AddElem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/AddIfMin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/Clear.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/Execute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/Exit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/GroupCountingByDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/Help.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/History.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/Info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/PrintDescending.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/PrintFieldDescendingDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/RemoveById.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/RemoveGreater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/Save.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/Show.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/commandLine/commands/UpdateId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/managers/CollectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/managers/CommandManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/managers/ExecuteSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/managers/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/managers/ScanerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/managers/UserInputManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/models/Coordinates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/models/LocationFrom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/models/LocationTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/models/Route.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/models/UserInputForm/CoordinatesInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/models/UserInputForm/Form.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/models/UserInputForm/LocationFromInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/models/UserInputForm/LocationToInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/models/UserInputForm/RouteInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/myExeptions/CommandRuntimeError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/myExeptions/ExitErr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/myExeptions/FileModeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/myExeptions/IllegalArgument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/myExeptions/IllegelCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/myExeptions/InvalidForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/java/org/example/myExeptions/NoSuchCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/main/my_file.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/src/test/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия (2)/~$port_lab5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/commands" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/report_lab5.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/BlankConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/Console.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/ConsoleColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/ConsoleInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/Executable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/Printable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/UserInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/AddElem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/AddIfMin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/Clear.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/Execute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/Exit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/GroupCountingByDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/Help.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/History.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/Info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/PrintDescending.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/PrintFieldDescendingDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/RemoveById.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/RemoveGreater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/Save.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/Show.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/commandLine/commands/UpdateId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/managers/CollectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/managers/CommandManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/managers/ExecuteSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/managers/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/managers/ScanerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/managers/UserInputManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/models/Coordinates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/models/LocationFrom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/models/LocationTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/models/Route.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/models/UserInputForm/CoordinatesInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/models/UserInputForm/Form.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/models/UserInputForm/LocationFromInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/models/UserInputForm/LocationToInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/models/UserInputForm/RouteInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/myExeptions/CommandRuntimeError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/myExeptions/ExitErr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/myExeptions/FileModeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/myExeptions/IllegalArgument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/myExeptions/IllegelCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/myExeptions/InvalidForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/java/org/example/myExeptions/NoSuchCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/main/my_file.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/src/test/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5 — копия/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/BlankConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/BlankConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/ConsoleColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/ConsoleColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/Executable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/Executable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/Printable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/Printable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/AddElem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/AddElem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/AddIfMin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/AddIfMin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Execute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/GroupCountingByDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/GroupCountingByDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/PrintDescending.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/PrintDescending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/PrintFieldDescendingDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/PrintFieldDescendingDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/RemoveById.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/RemoveById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/RemoveGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/RemoveGreater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/UpdateId.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/commandLine/commands/UpdateId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/ExecuteSpace.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/ExecuteSpace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/ScanerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/ScanerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/UserInputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/managers/UserInputManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/LocationTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/LocationTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/UserInputForm/CoordinatesInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/form/CoordinatesInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/UserInputForm/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/form/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/UserInputForm/LocationFromInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/form/LocationFromInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/UserInputForm/LocationToInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/form/LocationToInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/UserInputForm/RouteInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/models/form/RouteInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/myExeptions/CommandRuntimeError.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/exeptions/CommandRuntimeError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/myExeptions/ExitErr.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/exeptions/ExitErr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/myExeptions/FileModeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/exeptions/FileModeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/myExeptions/IllegalArgument.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/exeptions/IllegalArgument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/myExeptions/IllegelCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/exeptions/IllegelCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/myExeptions/InvalidForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/exeptions/InvalidForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/myExeptions/NoSuchCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/java/org/example/exeptions/NoSuchCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/src/main/my_file.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../labwork5/src/main/my_file.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../labwork5/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/prog_lab5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/BlankConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/Console.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/ConsoleColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/ConsoleInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/Executable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/Printable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/UserInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/AddElem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/AddIfMin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/Clear.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/Exit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/GroupCountingByDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/Help.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/History.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/Info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/PrintDescending.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/PrintFieldDescendingDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/RemoveById.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/RemoveGreater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/Show.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/commandLine/commands/UpdateId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/managers/CollectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/managers/CommandManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/managers/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/managers/ScanerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/managers/UserInputManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/models/Coordinates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/models/LocationFrom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/models/LocationTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/models/Route.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/models/UserInputForm/CoordinatesInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/models/UserInputForm/Form.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/models/UserInputForm/LocationFromInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/models/UserInputForm/LocationToInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/models/UserInputForm/RouteInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/myExeptions/CommandRuntimeError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/myExeptions/ExitErr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/myExeptions/IllegalArgument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/myExeptions/IllegelCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/myExeptions/InvalidForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog_lab5/src/myExeptions/NoSuchCommand.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2daOfyZr21in6dRHUHiGjFxfOuo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/Desktop/Учеба/Sem2/Прога/labwork5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/User/Desktop/Учеба/Sem2/Прога/Generic/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bbef858-7eda-478d-9c45-c70b84282e1c" name="Changes" comment="" />
+      <created>1710242832187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710242832187</updated>
+      <workItem from="1710242833302" duration="637000" />
+      <workItem from="1710254774794" duration="3079000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

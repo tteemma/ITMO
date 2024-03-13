@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\Учеба\ОПД\Puncts\src
+scp -P 2222 finalSkript.sh s413012@helios.se.ifmo.ru:/home/studs/s413012/finalSkript
+ssh -p 2222 s413012@helios.se.ifmo.ru
+mlHZ/2288
+mv finalSkript OPD/finaltest
+cd OPD/test4
+chmod -R 777 lab0
+rm -r lab0
+rm skript3
+
+остановимся на 32 строке и проверим resultArr[i][j] > 5
+
+chmod u+rwx jigglypuff0

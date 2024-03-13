@@ -1,0 +1,2 @@
+execute_script scrtipt3.txt
+save

@@ -1,0 +1,43 @@
+@startuml
+class TryCatchExeption {
++ {static} void main(String[])
++ {static} void ReadFile()
+}
+class NestedClass {
+- int id
+- {static} int tr
++ void Start()
+- void Test(Object)
+}
+class NestedClass$Motor {
++ void stMotor()
+}
+class NestedClass$Battery {
++ void charge()
+}
+class SomeClass {
++ void someMethod()
+}
+class Test {
++ {static} void main(String[])
+}
+class ScanEx {
+}
+interface AbleToEat {
+~ void eat()
+}
+class AnanimClass {
++ {static} void main(String[])
+}
+class Ex2 {
++ {static} void main(String[])
+}
+class CheckedUnchekedEx {
++ {static} void main(String[])
+}
+
+
+NestedClass +.. NestedClass$Motor
+NestedClass +.. NestedClass$Battery
+Exception <|-- ScanEx
+@enduml

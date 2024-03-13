@@ -1,0 +1,2 @@
+execute_script scrtipt2.txt
+info

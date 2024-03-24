@@ -1,0 +1,47 @@
+ORG 0x10E
+START: ; result = F(X-1) – F(Y+) + F(Z)
+	CLA
+	ST result
+	LD z
+	PUSH
+	CALL $function
+	POP
+	ADD result
+	ST result
+	LD y
+	INC
+	PUSH
+	CALL $function
+	POP
+	SUB result
+	ST result
+	LD x
+	DEC
+	PUSH
+	CALL $function
+	POP
+	SUB result
+	ST result
+	HLT
+	z: WORD 0x1
+	y: WORD 0x2
+	x: WORD 0x3
+	result: WORD 0x004B
+ORG 0x678
+function: 
+	LD &1
+	BPL exit
+	SUB q
+	BMI exit
+	BEQ exit
+	ADD q
+	ASL
+	ASL
+	SUB &1
+	ADD	w
+	JUMP return
+	exit: LD q
+	return: ST &1
+	RET
+	q: WORD 0xF671
+	w: WORD 0x004E

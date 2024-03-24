@@ -1,29 +1,29 @@
 package org.example.models.form;
 
-import org.example.commandLine.*;
+import org.example.commandline.*;
 import org.example.managers.ExecuteSpace;
 import org.example.models.LocationTo;
 
 /**
  * Форма пользовательского ввода для локации
  */
-public class LocationToInput extends Form<LocationTo>{
+public class LocationToInput extends UserInputForm<LocationTo> {
 
     private final Printable consol;
     private final UserInput scaner;
 
     public LocationToInput(Printable consol){
         this.consol =(Console.isFileMode())
-                ? new BlankConsole()
+                ? new ExecuteConsole()
                 : consol;
         this.scaner = (Console.isFileMode())
                 ? new ExecuteSpace()
                 : new ConsoleInput();
     }
     private int userInputX(){
-        consol.println(ConsoleColor.toColor("Введите параметры локации куда вы хотите прийти",ConsoleColor.CYAN));
+        consol.println(PaintConsole.paint("Введите параметры локации куда вы хотите прийти", PaintConsole.CYAN));
         while (true){
-            consol.println(ConsoleColor.toColor("Введите координату Х", ConsoleColor.GREEN));
+            consol.println(PaintConsole.paint("Введите координату Х", PaintConsole.GREEN));
             String userInputt = scaner.nextLine().trim();
             try {
                 return Integer.parseInt(userInputt);
@@ -34,7 +34,7 @@ public class LocationToInput extends Form<LocationTo>{
     }
     private Long userInputY(){
         while (true){
-            consol.println(ConsoleColor.toColor("Введите координату Y",ConsoleColor.GREEN));
+            consol.println(PaintConsole.paint("Введите координату Y", PaintConsole.GREEN));
             String userInputt = scaner.nextLine().trim();
             try {
                 return Long.parseLong(userInputt);
@@ -46,7 +46,7 @@ public class LocationToInput extends Form<LocationTo>{
 
     private String userInputName(){
         while (true){
-            consol.println(ConsoleColor.toColor("Введите название локации", ConsoleColor.GREEN));
+            consol.println(PaintConsole.paint("Введите название локации", PaintConsole.GREEN));
             String userInputt = scaner.nextLine().trim();
             if (userInputt.isEmpty()){
                 consol.printError("Название не может быть пустым, попробуйте еще раз!");

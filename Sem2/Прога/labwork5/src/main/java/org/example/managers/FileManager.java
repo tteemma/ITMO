@@ -4,15 +4,15 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.converters.ConversionException;
 import com.thoughtworks.xstream.io.StreamException;
 import com.thoughtworks.xstream.security.AnyTypePermission;
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
-import org.example.commandLine.Printable;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
+import org.example.commandline.Printable;
 import org.example.models.Route;
 import org.example.exeptions.ExitErr;
 import org.example.exeptions.InvalidForm;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
+import java.time.LocalDateTime;
 
 public class FileManager {
     private String text;
@@ -51,7 +51,7 @@ public class FileManager {
         StringBuilder stringBuilder = new StringBuilder();
         try {
             fileInputStream = new FileInputStream(file);
-            bufferedInputStream = new  BufferedInputStream(fileInputStream);
+            bufferedInputStream = new BufferedInputStream(fileInputStream);
             while (bufferedInputStream.available() > 0) {
                 stringBuilder.append((char) bufferedInputStream.read());
             }
@@ -67,14 +67,14 @@ public class FileManager {
             console.printError("Файл не найден");
             throw new ExitErr();
         } catch (IOException e) {
-            console.printError("Ошибка ввода/вывода");
+            console.printError("Ошибка!");
             throw new ExitErr();
         }
         return true;
     }
 
     /**
-     * Метод для считывания коллекции в формате XML(из файла) и перевода в TreeSet коллекцию
+     * Метод для считывания коллекции в формате XML(из файла)
      *
      * @throws ExitErr Если объекты в файле невалидны выходим из программы
      */
@@ -113,15 +113,16 @@ public class FileManager {
     /**
      * Метод для сохранения коллекции в файл
      */
-    public void saveObjects() {
+    public void saveToFile() {
         String file_path = pathToFile;
-        if (file_path == null || file_path.isEmpty()){
+        if (file_path == null || file_path.isEmpty()) {
             console.printError("Вы ничего не ввели");
             return;
-        } else console.println(ConsoleColor.toColor("Путь к файлу успешно получен",ConsoleColor.CYAN));
+        } else console.println(PaintConsole.paint("Путь к файлу успешно получен", PaintConsole.CYAN));
         try {
             BufferedOutputStream bis = new BufferedOutputStream(new FileOutputStream(file_path));
-            bis.write(xStream.toXML(collectionManager).getBytes(StandardCharsets.UTF_8));
+            bis.write(xStream.toXML(collectionManager).getBytes());
+            collectionManager.setLastSaveTime(LocalDateTime.now());
             bis.close();
         } catch (FileNotFoundException e) {
             console.printError("Файл не найден");

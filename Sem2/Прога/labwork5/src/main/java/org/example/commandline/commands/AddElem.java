@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CollectionManager;
 import org.example.models.form.RouteInput;
 import org.example.exeptions.IllegalArgument;
@@ -28,9 +28,9 @@ public class AddElem extends Command{
     public void execute(String args) throws IllegalArgument {
         if (!args.isBlank()) throw new IllegalArgument();
         try {
-            consol.println(ConsoleColor.toColor("Введите данные объекта Route", ConsoleColor.CYAN));
+            consol.println(PaintConsole.paint("Введите данные объекта Route", PaintConsole.CYAN));
             collectionManager.addElement(new RouteInput(consol).create());
-            consol.println(ConsoleColor.toColor("Создание объекта Route успешно окончено!",ConsoleColor.CYAN));
+            consol.println(PaintConsole.paint("Создание объекта Route успешно окончено!", PaintConsole.CYAN));
         } catch (InvalidForm invalidForm){
             consol.printError("Поля объекта не валидны! Объект не создан!");
         }

@@ -1,9 +1,8 @@
-package org.example.commandLine;
+package org.example.commandline;
 /**
  * Интерфейс способов вывода
  */
 public interface Printable {
     void println(String a);
-    void print(String a);
     void printError(String a);
 }

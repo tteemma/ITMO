@@ -1,6 +1,6 @@
 package org.example.models.form;
 
-import org.example.commandLine.*;
+import org.example.commandline.*;
 import org.example.managers.ExecuteSpace;
 import org.example.models.Coordinates;
 import org.example.models.LocationFrom;
@@ -10,13 +10,13 @@ import org.example.models.Route;
 /**
  * Форма пользовательского ввода для класса Route
  */
-public class RouteInput extends Form<Route> {
+public class RouteInput extends UserInputForm<Route> {
     private final Printable consol;
     private final UserInput scaner;
 
     public RouteInput(Printable consol){
         this.consol =(Console.isFileMode())
-                ? new BlankConsole()
+                ? new ExecuteConsole()
                 : consol;
         this.scaner = (Console.isFileMode())
                 ? new ExecuteSpace()
@@ -25,7 +25,7 @@ public class RouteInput extends Form<Route> {
 
     private String  userInputName(){
         while (true){
-            consol.println(ConsoleColor.toColor("Введите название маршрута",ConsoleColor.GREEN));
+            consol.println(PaintConsole.paint("Введите название маршрута", PaintConsole.GREEN));
             String name = scaner.nextLine().trim();
             if (name.isEmpty()) {
                 consol.printError("Эта строка не может быть пустой");
@@ -37,7 +37,7 @@ public class RouteInput extends Form<Route> {
     }
     private Long userInputDistance(){
         while (true){
-            consol.println(ConsoleColor.toColor("Введите значение дистанции между ними", ConsoleColor.CYAN));
+            consol.println(PaintConsole.paint("Введите значение дистанции между ними", PaintConsole.CYAN));
             String userInputt = scaner.nextLine().trim();
             try {
                 if (Long.parseLong(userInputt) > 1){

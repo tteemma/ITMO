@@ -1,6 +1,6 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Executable;
+import org.example.commandline.Executable;
 
 import java.util.Objects;
 

@@ -1,16 +1,11 @@
 package org.example;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.*;
-import org.example.commandLine.commands.*;
+import org.example.commandline.commands.*;
 import org.example.exeptions.ExitErr;
-import sun.misc.Signal;
-import sun.misc.SignalHandler;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.util.List;
 
 public class Main {
@@ -20,8 +15,8 @@ public class Main {
         CollectionManager collectionManager = new CollectionManager();
         try {
             String pathToFile = args[0];
-            console.println(ConsoleColor.toColor("Здравствуйте", ConsoleColor.PINK));
-            console.println(ConsoleColor.toColor("Введите команду " + new Help(console, commandManager).getName() + " чтобы узнать информацию о доступных командах:", ConsoleColor.PINK));
+            console.println(PaintConsole.paint("Здравствуйте", PaintConsole.PINK));
+            console.println(PaintConsole.paint("Введите команду " + new Help(console, commandManager).getName() + " чтобы узнать информацию о доступных командах:", PaintConsole.PINK));
         } catch (IndexOutOfBoundsException boundsException) {
             console.printError("Передайте путь в аргумете.......");
             return;
@@ -39,10 +34,9 @@ public class Main {
         Runtime.getRuntime().addShutdownHook(new Thread() {
             @Override
             public void run() {
-                console.println(ConsoleColor.toColor("До свидания!",ConsoleColor.YELLOW));
+                console.println(PaintConsole.paint("До свидания!", PaintConsole.YELLOW));
             }
         });
-        KeyStroke.getKeyStroke(KeyEvent.VK_Z, Toolkit.getDefaultToolkit().getMenuShortcutKeyMaskEx());
         commandManager.addCommand(List.of(
                 new AddElem(console, collectionManager),
                 new Exit(),
@@ -65,3 +59,11 @@ public class Main {
         userInputManager.interactiveMode();
     }
 }
+
+//        Signal.handle(new Signal("TSTP"), new SignalHandler() {
+//            @Override
+//            public void handle(Signal signal) {
+//                System.out.println("Вы нажали Control-Z");
+//            }
+//        });
+//KeyStroke.getKeyStroke(KeyEvent.VK_Z, Toolkit.getDefaultToolkit().getMenuShortcutKeyMaskEx());

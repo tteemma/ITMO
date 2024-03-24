@@ -1,8 +1,8 @@
-package org.example.commandLine;
+package org.example.commandline;
 
 
 
-public class BlankConsole implements Printable{
+public class ExecuteConsole implements Printable{
     @Override
     public void println(String a) {
 

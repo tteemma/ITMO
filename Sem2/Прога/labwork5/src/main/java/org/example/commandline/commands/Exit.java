@@ -1,4 +1,4 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
 import org.example.exeptions.ExitErr;
 

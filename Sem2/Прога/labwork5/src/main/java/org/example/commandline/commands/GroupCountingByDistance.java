@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CollectionManager;
 import org.example.models.Route;
 import org.example.exeptions.IllegalArgument;
@@ -40,7 +40,7 @@ public class GroupCountingByDistance extends Command{
             groupByDistance.computeIfAbsent(route.getDistance(), key -> new ArrayList<>()).add(route);
         }
         for (Map.Entry<Long, List<Route>> group : groupByDistance.entrySet()){
-            console.println(ConsoleColor.toColor("Значение поля distance: " + group.getKey() + "\nКоличество в коллекции: " + group.getValue().size() + "\n" ,ConsoleColor.BLUE));
+            console.println(PaintConsole.paint("Значение поля distance: " + group.getKey() + "\nКоличество в коллекции: " + group.getValue().size() + "\n" , PaintConsole.BLUE));
         }
     }
 }

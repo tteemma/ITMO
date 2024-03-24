@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CollectionManager;
 import org.example.models.Route;
 import org.example.models.form.RouteInput;
@@ -37,13 +37,13 @@ public class AddIfMin extends Command{
                 console.printError("Коллекция пустая");
                 return;
             }
-            console.println(ConsoleColor.toColor("Введите данные объекта Route", ConsoleColor.CYAN));
+            console.println(PaintConsole.paint("Введите данные объекта Route", PaintConsole.CYAN));
             Route newRoute = new RouteInput(console).create();
             if (newRoute.compareTo(collectionManager.getCollection().
                     stream().filter(Objects::nonNull).
                     min(Route::compareTo).orElse(null)) <= 1){
                 collectionManager.addElement(newRoute);
-                console.println(ConsoleColor.toColor("Объект успешно добавлен", ConsoleColor.CYAN));
+                console.println(PaintConsole.paint("Объект успешно добавлен", PaintConsole.CYAN));
             } else {
                 console.printError("Нуполучилось!Элемент больше наименьшего элемента в коллекции");
             }

@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.TreeSet;
 
-public class Route implements Comparable {
+public class Route implements Comparable{
     private int id; //Поле не может быть null, Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
     private String name; //Поле не может быть null, Строка не может быть пустой
     private Coordinates coordinates; //Поле не может быть null
@@ -15,7 +15,7 @@ public class Route implements Comparable {
     private long distance; //Поле может быть null, Значение поля должно быть больше 1
 
 
-    private static int nextId = 1;
+    private static int idPoint = 1;
     /**
      * @param name
      * @param coordinates
@@ -35,7 +35,7 @@ public class Route implements Comparable {
     }
 
     private static int incNextId(){
-        return nextId++;
+        return idPoint++;
     }
 
     public int getId() {
@@ -52,7 +52,7 @@ public class Route implements Comparable {
      * @param collection коллекция в которой работаем
      */
     public static void updateId(TreeSet<Route> collection){
-        nextId = collection.stream().filter(Objects::nonNull).map(Route::getId).mapToInt(Integer::intValue).max().orElse(0) + 1;
+        idPoint = collection.stream().filter(Objects::nonNull).map(Route::getId).mapToInt(Integer::intValue).max().orElse(0) + 1;
     }
 
     public String getName() {
@@ -119,6 +119,18 @@ public class Route implements Comparable {
             this.distance = distance;
         }
     }
+    @Override
+    public int compareTo(Object o) {
+        try {
+            return (int) (this.distance - (long) o.getClass().getMethod("getDistance").invoke(o));
+        } catch (InvocationTargetException e) {
+            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        } catch (NoSuchMethodException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     @Override
     public String toString() {
@@ -150,25 +162,27 @@ public class Route implements Comparable {
 
     @Override
     public int hashCode() {
-        int result = this.hashCode();
-        result = 31 * result + name.hashCode();
-        result = 31 * result + coordinates.hashCode();
-        result = 31 * result + creationDate.hashCode();
-        result = 31 * result + from.hashCode();
-        result = 31 * result + to.hashCode();
+        int result = 0;
+        result += 31 * id;
+        result += name.hashCode();
+        result += coordinates.hashCode();
+        result += creationDate.hashCode();
+        result += to.hashCode();
+        result += from.hashCode();
+        result += 31 * distance;
         return result;
     }
 
-    @Override
-    public int compareTo(Object o) {
-        try {
-            return (int) (this.distance - (long) o.getClass().getMethod("getDistance").invoke(o));
-        } catch (InvocationTargetException e) {
-            throw new RuntimeException(e);
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        } catch (NoSuchMethodException e) {
-            throw new RuntimeException(e);
-        }
-    }
+//    @Override
+//    public int compareTo(Object o) {
+//        try {
+//            return (int) (this.distance - (long) o.getClass().getMethod("getDistance").invoke(o));
+//        } catch (InvocationTargetException e) {
+//            throw new RuntimeException(e);
+//        } catch (IllegalAccessException e) {
+//            throw new RuntimeException(e);
+//        } catch (NoSuchMethodException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
 }

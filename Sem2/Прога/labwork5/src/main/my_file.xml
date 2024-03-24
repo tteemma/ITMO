@@ -1,5 +1,25 @@
 <Array>
   <Route>
+    <id>3</id>
+    <name>41243214</name>
+    <coordinates>
+      <x>324324</x>
+      <y>32.0</y>
+    </coordinates>
+    <creationDate>2024-03-13T14:47:19.7374924</creationDate>
+    <from>
+      <x>432.0</x>
+      <y>432.0</y>
+      <name>432</name>
+    </from>
+    <to>
+      <x>432</x>
+      <y>423</y>
+      <name>432</name>
+    </to>
+    <distance>312</distance>
+  </Route>
+  <Route>
     <id>2</id>
     <name>ITMO-TEREMOK</name>
     <coordinates>
@@ -39,7 +59,7 @@
     </to>
     <distance>10000000000</distance>
   </Route>
-  <lastInitTime>2024-03-13T10:17:21.9861114</lastInitTime>
-  <initTime>2024-03-13T10:17:21.5361117</initTime>
-  <lastSaveTime>2024-03-11T12:49:33.9413642</lastSaveTime>
+  <lastInitTime>2024-03-13T14:47:19.7374924</lastInitTime>
+  <initTime>2024-03-13T14:47:09.8751544</initTime>
+  <lastSaveTime>2024-03-13T14:14:45.6128986</lastSaveTime>
 </Array>

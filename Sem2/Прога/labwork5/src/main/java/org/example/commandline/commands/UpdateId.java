@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CollectionManager;
 import org.example.models.Route;
 import org.example.models.form.RouteInput;
@@ -34,9 +34,9 @@ public class UpdateId extends Command{
         try {
             int id = Integer.parseInt(args.trim());
             if (!collectionManager.checkExist(id)) throw new NoSuchId();
-            console.println(ConsoleColor.toColor("Введите новые значения для объекта Route...",ConsoleColor.CYAN));
+            console.println(PaintConsole.paint("Введите новые значения для объекта Route...", PaintConsole.CYAN));
             Route newRoute = new RouteInput(console).create();
-            console.println(ConsoleColor.toColor("Изменение объекта Route успешно окончено :)",ConsoleColor.CYAN));
+            console.println(PaintConsole.paint("Изменение объекта Route успешно окончено :)", PaintConsole.CYAN));
             collectionManager.editById(id,newRoute);
         } catch (InvalidForm invalidForm) {
             console.printError("Поля объекта не валидны! Объект не создан!");

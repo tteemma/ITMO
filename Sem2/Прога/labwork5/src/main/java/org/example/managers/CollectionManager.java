@@ -6,7 +6,6 @@ import org.example.exeptions.*;
 import java.util.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.stream.Collectors;
 
 /**
  * Класс организующий работу с коллекцией
@@ -68,7 +67,7 @@ public class CollectionManager {
     public boolean checkExist(int id){
         return collection.stream().anyMatch((x) -> x.getId() == id);
     }
-    public Route getLast(){
+    public Route getLastEl(){
         return collection.last();
     }
     public void removeElement(Route el){
@@ -102,7 +101,7 @@ public class CollectionManager {
         newElement.setId(id);
         this.addElement(newElement);
         Route.updateId(this.getCollection());
-        this.lastSaveTime =LocalDateTime.now();
+        this.lastSaveTime = LocalDateTime.now();
     }
     public String getLastInitTime(){
         return formatTime(lastInitTime);
@@ -133,7 +132,7 @@ public class CollectionManager {
     public String toString() {
         if (collection.isEmpty()) return "Колекция пустая";
 
-        var last = getLast();
+        var last = getLastEl();
 
         StringBuilder info = new StringBuilder();
         for (Route route: collection){

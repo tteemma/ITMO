@@ -1,11 +1,9 @@
 package org.example.managers;
 
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
-import org.example.commandLine.Printable;
+import org.example.commandline.Console;
+import org.example.commandline.Printable;
 import org.example.exeptions.*;
-import sun.misc.Signal;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;

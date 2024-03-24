@@ -1,6 +1,6 @@
 package org.example.managers;
 
-import org.example.commandLine.commands.Command;
+import org.example.commandline.commands.Command;
 import org.example.exeptions.*;
 
 import java.util.ArrayList;

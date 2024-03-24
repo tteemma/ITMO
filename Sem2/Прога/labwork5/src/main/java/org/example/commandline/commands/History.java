@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CommandManager;
 import org.example.exeptions.IllegalArgument;
 
@@ -26,7 +26,7 @@ public class History extends Command{
         if (!args.isBlank()) throw new IllegalArgument();
         List<String> hisory = commandManager.getCommandHistory();
         for (String command:hisory.subList(Math.max(hisory.size() - 6,0),hisory.size())){
-            console.println(ConsoleColor.toColor(command,ConsoleColor.CYAN));
+            console.println(PaintConsole.paint(command, PaintConsole.CYAN));
         }
     }
 }

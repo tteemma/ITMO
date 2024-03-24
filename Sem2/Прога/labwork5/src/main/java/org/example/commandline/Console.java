@@ -1,4 +1,4 @@
-package org.example.commandLine;
+package org.example.commandline;
 
 /**
  * Класс для вывода в стандартную консоль
@@ -19,12 +19,7 @@ public class Console implements Printable {
     }
 
     @Override
-    public void print(String a) {
-        System.out.print(a);
-    }
-
-    @Override
     public void printError(String a) {
-        System.out.println(ConsoleColor.RED + a + ConsoleColor.RESET);
+        System.out.println(PaintConsole.RED + a + PaintConsole.RESET);
     }
 }

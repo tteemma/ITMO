@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CollectionManager;
 import org.example.exeptions.IllegalArgument;
 
@@ -34,10 +34,10 @@ public class Info extends Command{
                 : collectionManager.getLastSaveTime();
         StringBuilder info = new StringBuilder();
         info.append("Сведения о коллекции...\n")
-                .append(ConsoleColor.toColor("Тип: ",ConsoleColor.CYAN) + collectionManager.getCollectionType() + "\n")
-                .append(ConsoleColor.toColor("Размер коллекции: ",ConsoleColor.CYAN) + collectionManager.getCollectionSize() + "\n")
-                .append(ConsoleColor.toColor("Дата последней инициализации: ", ConsoleColor.CYAN) + lastInitTime + "\n")
-                .append(ConsoleColor.toColor("Дата последнего сохранения: ", ConsoleColor.CYAN) + lastSaveTime + "\n");
+                .append(PaintConsole.paint("Тип: ", PaintConsole.CYAN) + collectionManager.getCollectionType() + "\n")
+                .append(PaintConsole.paint("Размер коллекции: ", PaintConsole.CYAN) + collectionManager.getCollectionSize() + "\n")
+                .append(PaintConsole.paint("Дата последней инициализации: ", PaintConsole.CYAN) + lastInitTime + "\n")
+                .append(PaintConsole.paint("Дата последнего сохранения: ", PaintConsole.CYAN) + lastSaveTime + "\n");
         console.println(info.toString());
     }
 }

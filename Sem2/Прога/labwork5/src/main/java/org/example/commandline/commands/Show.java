@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.ConsoleColor;
-import org.example.commandLine.Printable;
+import org.example.commandline.PaintConsole;
+import org.example.commandline.Printable;
 import org.example.managers.CollectionManager;
 import org.example.exeptions.IllegalArgument;
 
@@ -38,7 +38,7 @@ public class Show extends Command{
         if (!args.isBlank()) throw new IllegalArgument();
         var collection = collectionManager.getCollection();
         if (collection == null || collection.isEmpty()){
-            consol.println(ConsoleColor.toColor("Коллекция пустая", ConsoleColor.PINK));
+            consol.println(PaintConsole.paint("Коллекция пустая", PaintConsole.PINK));
         }else {
             collection.forEach(System.out::println);
         }

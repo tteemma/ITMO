@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CommandManager;
 import org.example.exeptions.IllegalArgument;
 
@@ -26,7 +26,7 @@ public class Help extends Command{
     public void execute(String args) throws IllegalArgument{
         if (!args.isBlank()) throw new IllegalArgument();
         commandManager.getCommands()
-                .forEach(command -> console.println(ConsoleColor.toColor(command.getName(),ConsoleColor.PURPLE) +
-                        ConsoleColor.toColor(command.getDescription(),ConsoleColor.CYAN)));
+                .forEach(command -> console.println(PaintConsole.paint(command.getName(), PaintConsole.PURPLE) +
+                        PaintConsole.paint(command.getDescription(), PaintConsole.CYAN)));
     }
 }

@@ -1,20 +1,20 @@
 package org.example.models.form;
 
-import org.example.commandLine.*;
+import org.example.commandline.*;
 import org.example.managers.ExecuteSpace;
 import org.example.models.Coordinates;
 
 /**
  * Форма пользовательского ввода для координат
  */
-public class CoordinatesInput extends Form<Coordinates> {
+public class CoordinatesInput extends UserInputForm<Coordinates> {
 
     private final Printable consol;
     private final UserInput scaner;
 
     public CoordinatesInput(Printable consol){ // С чтением из файла надо будет переделать немного
         this.consol =(Console.isFileMode())
-                ? new BlankConsole()
+                ? new ExecuteConsole()
                 : consol;
         this.scaner = (Console.isFileMode())
                 ? new ExecuteSpace()
@@ -22,9 +22,9 @@ public class CoordinatesInput extends Form<Coordinates> {
     }
 
     private int userInputX(){
-        consol.println(ConsoleColor.toColor("Введите значения координат пути:",ConsoleColor.CYAN));
+        consol.println(PaintConsole.paint("Введите значения координат пути:", PaintConsole.CYAN));
         while (true){
-            consol.println(ConsoleColor.toColor("Введите координату Х: ", ConsoleColor.GREEN));
+            consol.println(PaintConsole.paint("Введите координату Х: ", PaintConsole.GREEN));
             String userInputt = scaner.nextLine().trim();
             try {
                 return Integer.parseInt(userInputt);
@@ -35,7 +35,7 @@ public class CoordinatesInput extends Form<Coordinates> {
     }
     private Float userInputY(){
         while (true){
-            consol.println(ConsoleColor.toColor("Введите координату Y: ", ConsoleColor.GREEN));
+            consol.println(PaintConsole.paint("Введите координату Y: ", PaintConsole.GREEN));
             String userInputt = scaner.nextLine().trim();
             try {
                 return Float.parseFloat(userInputt);

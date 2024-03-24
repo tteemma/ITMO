@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CollectionManager;
 import org.example.models.Route;
 import org.example.exeptions.IllegalArgument;
@@ -32,7 +32,7 @@ public class PrintDescending extends Command{
         if (!args.isBlank()) throw new IllegalArgument();
         Collection<Route> reversCollection = collectionManager.getCollection();
         if (reversCollection == null || reversCollection.isEmpty()){
-            console.println(ConsoleColor.toColor("Коллекция пустая", ConsoleColor.PINK));
+            console.println(PaintConsole.paint("Коллекция пустая", PaintConsole.PINK));
             return;
         }
         console.println(collectionManager.reversCollections((TreeSet<Route>)reversCollection));

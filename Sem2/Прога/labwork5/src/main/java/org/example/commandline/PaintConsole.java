@@ -1,6 +1,6 @@
-package org.example.commandLine;
+package org.example.commandline;
 
-public enum ConsoleColor {
+public enum PaintConsole {
     RED("\u001B[31m"),
     GREEN("\u001B[32m"),
     YELLOW("\u001B[33m"),
@@ -12,7 +12,7 @@ public enum ConsoleColor {
 
     private final String title;
 
-    ConsoleColor(String title){
+    PaintConsole(String title){
         this.title = title;
     }
     /**
@@ -21,8 +21,8 @@ public enum ConsoleColor {
      * @param color значение цвета
      * @return цветная строка для вывода в консоль
      */
-    public static String paint(String s, ConsoleColor color){
-        return color + s + ConsoleColor.RESET;
+    public static String paint(String s, PaintConsole color){
+        return color + s + PaintConsole.RESET;
     }
 
     public String getTitle(){

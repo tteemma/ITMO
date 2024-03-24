@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.FileManager;
 import org.example.exeptions.IllegalArgument;
 
@@ -28,7 +28,7 @@ public class Save extends Command {
     @Override
     public void execute(String args) throws IllegalArgument {
         if (!args.isBlank()) throw new IllegalArgument();
-        fileManager.saveObjects();
-        console.println(ConsoleColor.toColor("Коллекция успешно сохранена", ConsoleColor.CYAN));
+        fileManager.saveToFile();
+        console.println(PaintConsole.paint("Коллекция успешно сохранена", PaintConsole.CYAN));
     }
 }

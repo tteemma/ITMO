@@ -1,6 +1,6 @@
 package org.example.managers;
 
-import org.example.commandLine.UserInput;
+import org.example.commandline.UserInput;
 
 import java.io.*;
 import java.nio.file.Paths;

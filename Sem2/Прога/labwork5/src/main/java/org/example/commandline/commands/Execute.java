@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CommandManager;
 import org.example.managers.ExecuteSpace;
 import org.example.exeptions.CommandRuntimeError;
@@ -19,65 +19,6 @@ import java.util.NoSuchElementException;
  * Считатывает и исполняет скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме.
  */
 public class Execute extends Command{
-//    private final Console console;
-//    private final CommandManager commandManager;
-//
-//    public Execute(Console console, CommandManager commandManager) {
-//        super("execute_script", "считать и исполнить скрипт из указанного файла. В скрипте содержатся команды в таком же виде, в котором их вводит пользователь в интерактивном режиме");
-//        this.console = console;
-//        this.commandManager = commandManager;
-//    }
-//
-//    @Override
-//    public void execute(String args) throws IllegalArgument, ExitErr {
-//        if (args == null || args.isEmpty()) {
-//            console.printError("Отсутствует путь к исполняемому файлу");
-//            return;
-//        } else {
-//            console.println(ConsoleColor.toColor("Путь получен успешно",ConsoleColor.CYAN));
-//        }
-//        Console.setFileMode(true);
-//        try {
-//            ExecuteSpace.pushFile(args.trim());
-//            for (String line = ExecuteSpace.readLine(); line != null; line = ExecuteSpace.readLine()) {
-//                try {
-//                    String[] command = (line.trim() + " ").split(" ", 2);
-//                    command[1] = command[1].trim();
-//                    commandManager.addHistory(command[0]);
-//                    if (command[0].isBlank()) return;
-//                    if (command[0].equals("execute_script")) {
-//                        if (ExecuteSpace.fileRecursion(command[1])) {
-//                            console.printError("Обнаружена рекурсия" + new File(command[1]).getAbsolutePath());
-//                            continue;
-//                        }
-//                    }
-//                    console.println(ConsoleColor.toColor("Выполнение команды " + command[0], ConsoleColor.GREEN));
-//                    commandManager.execute(command[0], command[1]);
-//                    if (command[0].equals("execute_script")) {
-//                        ExecuteSpace.popFile();
-//                    }
-//                } catch (NoSuchCommand e) {
-//                    console.printError("Такой команды нет в списке");
-//                } catch (NoSuchElementException e) {
-//                    console.printError("Пользовательский ввод не обнаружен");
-//                } catch (IllegalArgument e) {
-//                    console.printError("Введены неверные аргументы команды");
-//                } catch (CommandRuntimeError e) {
-//                    console.printError("Ошибка при исполнении команды");
-//                }
-//            }
-//            ExecuteSpace.popFile();
-//        } catch (NoSuchCommand e) {
-//            console.printError("Такой команды нет в списке");
-//        } catch (FileNotFoundException e) {
-//            console.printError("Исполняемый файл не найден");
-//        } catch (IOException e) {
-//            console.printError("Ошибка ввода/вывода");
-//        } catch (NoSuchElementException e) {
-//            console.println(ConsoleColor.toColor("Конец выполняемого скрипта", ConsoleColor.YELLOW));
-//        }
-//        Console.setFileMode(false);
-//    }
     private final Console console;
     private final CommandManager commandManager;
 
@@ -101,7 +42,7 @@ public class Execute extends Command{
             return;
         }
         else {
-            console.println(ConsoleColor.toColor("Путь получен успешно",ConsoleColor.CYAN));
+            console.println(PaintConsole.paint("Путь получен успешно", PaintConsole.CYAN));
         }
         Console.setFileMode(true);
         try {
@@ -121,7 +62,7 @@ public class Execute extends Command{
                         }
                         ExecuteSpace.pushFile(cmd[1]);
                     }
-                    console.println(ConsoleColor.toColor("Выполнение команды " + cmd[0], ConsoleColor.YELLOW));
+                    console.println(PaintConsole.paint("Выполнение команды " + cmd[0], PaintConsole.YELLOW));
                     commandManager.execute(cmd[0],cmd[1]);
                     if (cmd[0].equals("execute_script")){
                         ExecuteSpace.popFile();

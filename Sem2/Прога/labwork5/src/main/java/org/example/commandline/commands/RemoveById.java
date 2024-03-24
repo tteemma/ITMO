@@ -1,7 +1,7 @@
-package org.example.commandLine.commands;
+package org.example.commandline.commands;
 
-import org.example.commandLine.Console;
-import org.example.commandLine.ConsoleColor;
+import org.example.commandline.Console;
+import org.example.commandline.PaintConsole;
 import org.example.managers.CollectionManager;
 import org.example.exeptions.IllegalArgument;
 
@@ -32,7 +32,7 @@ public class RemoveById extends Command{
             int id = Integer.parseInt(args.trim());
             if (!collectionManager.checkExist(id)) throw new NoSuchId();
             collectionManager.removeElement(collectionManager.getById(id));
-            console.println(ConsoleColor.toColor("Удаление объекта с id = " + id + " завершено успешно...",ConsoleColor.CYAN));
+            console.println(PaintConsole.paint("Удаление объекта с id = " + id + " завершено успешно...", PaintConsole.CYAN));
         } catch (NoSuchId idException){
             int id1 = Integer.parseInt(args.trim());
             console.printError("Объекта с id " + id1 + " нет в коллекции. Введите элемент, ID котрого есть в коллекции, чтобы удалить его");

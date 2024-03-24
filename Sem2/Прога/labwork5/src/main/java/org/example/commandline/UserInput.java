@@ -1,6 +1,4 @@
-package org.example.commandLine;
-
-import java.io.IOException;
+package org.example.commandline;
 
 public interface UserInput {
     public String nextLine();

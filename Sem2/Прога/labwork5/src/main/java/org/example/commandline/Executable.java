@@ -1,4 +1,4 @@
-package org.example.commandLine;
+package org.example.commandline;
 
 import org.example.exeptions.CommandRuntimeError;
 import org.example.exeptions.ExitErr;
